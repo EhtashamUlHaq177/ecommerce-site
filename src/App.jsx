@@ -195,7 +195,7 @@
 
 
 import { useState, useEffect } from 'react';
-import { Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes,Route, useLocation } from "react-router-dom";
 import './App.css';
 import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
@@ -230,6 +230,7 @@ function App() {
   }, [showCart]);
 
   return (
+    <Router basename="/ecommerce-site"> 
     <CartProvider setShowCart={setShowCart}>
       <div className={showCart ? 'blur-background' : ''}>
         <Nav setShowCart={setShowCart} />
@@ -246,6 +247,7 @@ function App() {
         <Cart showCart={showCart} setShowCart={setShowCart} />
       </div>
     </CartProvider>
+    </Router>
   );
 }
 

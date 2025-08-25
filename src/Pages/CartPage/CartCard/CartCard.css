@@ -1,0 +1,86 @@
+.CartCard{
+    background-color: white;
+    display: flex;
+    padding: 50px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+
+}
+.ProductLeft{
+    display: flex;
+    
+}
+.LeftImg{
+    height: 100px;
+    width: 120px;
+    border: 1px solid #0f181f;
+    margin: 0 20px;
+}
+.LeftImg img{
+    height: 90px;
+    width: 110px;
+    object-fit: cover;
+}
+
+.ProductMoreDetails{
+    display: flex;
+}
+.LeftDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 130px;
+}
+.DetailsImg{
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+.DetailsText{
+    color: gray;
+    cursor: pointer;
+}
+
+
+/* right */
+.ProductRight{
+    margin-left: 50px;
+    display: flex;
+    gap: 50px;
+}
+.Quantity{
+    display: flex;
+    gap: 15px;
+    height: 20px;
+    width: 85px;
+    padding: 0 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.Quantity p{
+    margin: 0 4%;
+}
+
+
+.DeleteIcon{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.LineBreak{
+    height: 1px;
+    /* border: 1px solid black; */
+    margin-top:20px ;
+    margin-bottom: 20px;
+}
+
+@media(max-width:767.99px){
+    .CartCard{
+        width: auto;
+    }
+}

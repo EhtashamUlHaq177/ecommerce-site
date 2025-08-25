@@ -1,0 +1,534 @@
+
+ .navBar{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    background-color: rgb(244, 247, 250);
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index:5;
+}
+.logoimg{
+  height: 20px;
+  width: 20px;
+}
+.brandName{
+    margin-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    width: 110px;
+    color: #0f181f;
+}
+
+.navList{
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 280px;
+    
+}
+.navList li{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.navList li a{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    
+    text-decoration: none;
+    color: #0f181f;
+}
+
+
+.navList :hover{
+    text-decoration: underline;
+}
+.navLogin{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 220px;
+}
+.navCart{
+    height: 23px;
+    width: 22px;
+    margin: 0 25px;
+    margin-right: -100px; 
+    cursor: pointer;
+}
+.logIn{
+   padding-right: 60px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   margin-top: 5px;
+   cursor: pointer;
+   transition: color 0.3s ease, opacity 0.3s ease;
+} 
+.logIn:hover{
+  opacity: 0.5;
+  color: gray;  
+}
+.menu-btn {
+    display: block; 
+    border: none;
+    display: none;
+
+}
+.menu-btn img{
+    height: 50px;
+}
+
+/* new css */
+
+
+
+/* Responsive Design */
+
+@media (min-width:310px) and (max-width: 479.99px){
+
+
+  .navBar{
+    width: 565px;
+  }
+  .menu-btn {
+    position: absolute;
+    right: 0.1%;
+    top: 25%;
+    margin-right: 70px;
+    display: inline;
+    
+}
+.navLinks{
+  width: 360px;
+  object-fit: cover;
+}
+
+
+.menu-btn img{
+    height: 40px;
+    margin-right: -180px;
+    position: absolute;
+    left: -1%;
+   
+}
+.navList{
+    visibility: hidden;
+}
+
+.brandName{
+    position: absolute;
+    left: 45%;
+    
+    transform: translateX(-50%);
+    top: 38%;
+}
+.logIn{
+    display: none;
+}
+.navCart{
+    position: absolute;
+    left:0;
+    top: 22%;
+    height: 35px;
+    width: 30px;
+}
+
+/* 🔥 Added fullscreen overlay styles */
+.overlay {
+position: fixed;
+top: 0;
+right: 0;
+height: 100vh;
+width: 80vw;
+background-color: rgba(255, 255, 255, 0.98);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 60px;
+z-index: 999;
+}
+
+.overlay-login {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay-menu {
+list-style: none;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+
+.overlay-menu li {
+padding: 15px 0;
+
+font-family: Arial, Helvetica, sans-serif;
+cursor: pointer;
+}
+
+.overlay-menu li:hover {
+text-decoration: underline;
+}
+
+
+
+.close-btn {
+position: absolute;
+top: 20px;
+right: 25px;
+background: none;
+border: none;
+font-size: 30px;
+cursor: pointer;
+z-index: 1000;
+}
+.overlay-menu li a{
+        text-decoration: none;
+        color: #0f181f;
+  }
+
+
+
+
+  
+
+
+}
+
+
+@media  (min-width:480px)and (max-width: 600px){
+
+    .menu-btn {
+        position: absolute;
+        right: 0.1%;
+        margin-right: 80px;
+        top: 30%;
+        display: inline;
+        
+    }
+    .menu-btn img{
+        height: 40px;
+        margin-right: -180px;
+        position: absolute;
+        left: -1%;
+    }
+    .navList{
+        visibility: hidden;
+        display: none;
+    }
+  
+    .brandName{
+        position: absolute;
+        left: 45%;
+        transform: translateX(-50%);
+        top: 38%;
+    }
+    .logIn{
+        display: none;
+    }
+    .navCart{
+        
+       position: absolute;
+       left:0;
+       top: 22%;
+       height: 35px;
+       width: 30px;
+
+    }
+
+    /* 🔥 Added fullscreen overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.98);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 999;
+  }
+  
+  .overlay-login {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .overlay-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .overlay-menu li {
+    padding: 15px 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  .overlay-menu li:hover {
+    text-decoration: underline;
+  }
+  
+    
+    /* 🔥 Added close (X) button style */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .overlay-menu li a{
+        text-decoration: none;
+        color: #0f181f;
+  }
+  
+
+}
+
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+  
+  
+  .navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    background-color: rgb(244, 247, 250);
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+  .menu-btn {
+        position: absolute;
+        right: 0.1%;
+        top: 30%;
+        margin-right: 50px;
+        display: inline;
+    }
+    .menu-btn img{
+        height: 40px;   
+    }
+    .navList{
+        visibility: hidden;
+    }
+
+    .brandName{
+        position: absolute;
+        left: 43%;
+        top: 38%;
+        transform: translateX(-50%);
+        /* padding-top: 5%; */
+    }
+    .logIn{
+        display: none;
+    }
+    .navCart{
+        position: absolute;
+        left:0;
+        top: 38%;
+        height: 23px;
+        width: 22px;
+    }
+
+    /* 🔥 Added fullscreen overlay styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.98);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 999;
+  }
+  
+  .overlay-login {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .overlay-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .overlay-menu li {
+    padding: 15px 0;
+    /* font-size: 18px; */
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: #0f181f;
+  }
+  .overlay-menu li a{
+        text-decoration: none;
+        color: #0f181f;
+  }
+  
+  .overlay-menu li:hover {
+    text-decoration: underline;
+  }
+  
+    
+    /* 🔥 Added close (X) button style */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+
+    
+}
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* .navBar{
+      width: 100%;
+    } */
+    
+    .brandName {
+        margin-left: 25px;
+      }
+    
+      .navList {
+        margin-left: 70px;
+        width: 270px;
+      }
+    
+      .navLogin {
+        padding-left: 80px;
+        /* margin-right: -60px; */
+        padding-right: 40px;
+        /* padding halfed */
+      }
+    
+      .navCart {
+        margin: 0 25px;
+      }
+
+  }
+  
+  /* Large devices (≥992px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .brandName {
+      margin-left: 30px;
+    }
+  
+    .navList {
+      margin-left: 150px;
+    }
+  
+    /* .navLogin {
+      padding-left: 100px;
+      margin-right: -120px
+    }
+  
+    .navCart {
+      margin: 0 30px;
+      position: absolute;
+      left: 90%;
+    } */
+
+
+   .navLogin {
+      padding-left: 50px;
+      margin-right: -120px
+    }
+  
+    .navCart {
+      margin: 0 30px;
+      position: absolute;
+      left: 90%;
+    }
+
+
+  }
+  
+  /* Extra large devices (≥1200px) */
+  @media (min-width: 1200px) and (max-width: 1399.98px) {
+    .brandName {
+      margin-left: 5%;
+    }
+  
+    .navList {
+      margin-left: 200px;
+    }
+  
+    .navLogin {
+      padding-left: 140px;
+      margin-right: -140px
+    }
+  
+    .navCart {
+      margin: 0 25px;
+    }
+  }
+  
+  /* Extra extra large devices (≥1400px) */
+  /* @media (min-width: 1400px) {
+    .brandName {
+      margin-left: 5%;
+    }
+  
+    .navList {
+      margin-left: 480px;
+    }
+  
+    .navLogin {
+      padding-left: 290px;
+      margin-right: -150px
+    }
+  
+    .navCart {
+      margin: 0 25px;
+    }
+  } */
+
+
+  @media (max-width: 1400px) {
+   
+  }

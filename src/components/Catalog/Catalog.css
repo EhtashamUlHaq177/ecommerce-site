@@ -1,0 +1,259 @@
+.CataLog{
+    height: 600px;
+    background-color: white;
+    z-index: 1;
+}
+.CatalogUpper{
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    height: 160px;
+    align-items: center;
+}
+.Upperleft{
+    
+    width: 50%;
+    padding-left: 50px;
+    
+}
+.UpperleftHead{
+    font-size: 31px;
+    color: #0f181f;
+    
+}
+.UpperleftPara{
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0f181f;
+}
+.UpperRight{
+   
+    width: 50%;
+    padding-left: 65px;
+    font-family:  Helvetica,Arial, sans-serif;
+    color: #0f181f;
+}
+
+
+/* Lower catalog */
+
+
+.CataLog {
+    padding: 2rem 0;
+  }
+  
+  .CatalogLower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 55px;
+  }
+  
+
+
+  /* .carousel {
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+  }
+
+  
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  } */
+  
+  .carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-shrink: 0;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  
+  .nav-btn {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    height: 31px;
+    width: 31px;
+    cursor: pointer;
+    position: absolute;
+    top: 32%;
+    z-index: 1;
+  }
+  
+  /* .nav-btn.left {
+    left: 1rem;
+    z-index: 1;
+  } */
+
+.arrowLeft{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    rotate: 180deg;
+    
+  }
+.nav-btn.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 1rem;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+  }
+
+  .arrowRight{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  .nav-btn.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0.8rem;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+  }
+
+
+
+
+
+  /* Responsive */
+
+  @media (min-width: 768px) and (max-width: 991.98px){
+   
+    .nav-btn {
+        
+        font-size: 1.2rem;
+      }
+      
+      .nav-btn.left {
+        left: 1rem;
+      }
+      
+
+
+  }
+
+  @media  (min-width:480px)and (max-width: 600px){
+    .CatalogUpper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Upperleft{
+        margin-bottom: 30px;
+    }
+    .UpperRight{
+        padding-left: 50px;
+    }
+    .nav-btn {
+       display: none;
+    }
+  }
+  
+
+  @media  (max-width:479.99px){
+     
+    .CatalogUpper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Upperleft{
+        margin-bottom: 30px;
+    }
+    .UpperRight{
+        padding-left: 50px;
+    }
+    .nav-btn {
+       display: none;
+    }
+    .CataLog{
+      width: 565px;
+    }
+
+    /* 
+    .CataLog{
+      width: 565px;
+      
+      
+  }
+
+    .CatalogUpper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Upperleft{
+        margin-bottom: 30px;
+        padding-left: 30px;
+    }
+    .UpperRight{
+        padding-left: 30px;
+        width: 340px;
+
+    }
+    .UpperRight p{
+       width: 500px;
+    }
+    .nav-btn {
+       display: none;
+    }
+    .CatalogLower{
+        width: 350px;
+        margin-left: 50px;
+        
+    } */
+    
+  }
+
+  @media  (min-width:1100px){
+    .CatalogUpper{
+      margin-bottom: 30px;
+      display: flex;
+      width: 100%;
+      height: 160px;
+      align-items: center;
+  }
+    
+  }
+
+  
+
+
+
+
+
+
+
+
+  
+  

@@ -1,0 +1,678 @@
+.Shop {
+  height: auto;
+  background-color: white;
+  padding: 10px 30px;
+
+}
+
+.ShopNav {
+  height: 40px;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.ShopNav p {
+  width: auto;
+}
+.ShopNav a{
+  color: #0f181f;
+  text-decoration: none;
+}
+
+.HomeNav {
+  cursor: pointer;
+}
+
+
+.ShopRightNav p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.ArrowNav {
+  height: 22px;
+  margin: 0 10px;
+  width: 20px;
+}
+
+.ShopSection {
+  display: flex;
+}
+
+.ShopLeft {
+  width: 20%;
+}
+
+.ShopRight {
+  width: 80%;
+  padding: 20px;
+}
+
+.Browse {
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 16px;
+}
+
+.ShopLeftTop {
+  padding-bottom: 48px;
+}
+
+.Browsecategory {
+  padding: 5px;
+  margin: -5px;
+}
+
+.Browsecategory ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Browsecategory li {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.Browsecategory li:hover,
+.Browsecategory li.active {
+  text-decoration: underline;
+}
+
+.FilterBy {
+  font-size: 20px;
+}
+
+.FilterSection {
+  margin-top: 20px;
+}
+
+.FilterToggle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.FilterOptions {
+  padding: 10px 0;
+}
+
+
+.FilterOptions label {
+  display: block;
+  margin: 5px 0;
+}
+
+.price-slider {
+  padding: 10px 0;
+}
+
+.price-slider input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+}
+
+.price-display {
+  text-align: center;
+  font-size: 14px;
+  color: #0f181f;
+}
+
+.ShopRightTopHead {
+  font-size: 28px;
+  color: #0f181f;
+}
+
+.ShopRightTopPara {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #0f181f;
+  padding-top: 4px;
+}
+
+.FilterApplied {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.applied-filter {
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.applied-filter span {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.clear-all {
+  color: #0000ff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.ShopRightMiddle {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ShopRightMiddleLeft {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #0f181f;
+}
+
+.ShopRightMiddleRight {
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #0f181f;
+  position: relative;
+}
+
+.ShopRightMiddleRight img {
+  height: 24px;
+  width: 24px;
+  margin: 0 5px;
+}
+
+.SortBy {
+  margin: 0 5px;
+}
+
+.SortDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.SortDropdown div {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.SortDropdown div:hover {
+  background: #f0f0f0;
+}
+
+.GridItems .grid-container {
+  display: grid;
+  gap: 20px;
+}
+
+
+
+.price-slider {
+  padding: 10px 0;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.SortByArrow{
+  cursor: pointer;
+}
+
+/* hello */
+
+.price-slider {
+  padding: 10px 0;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #ddd, #ddd);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  position: absolute;
+  top: 0;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.min-slider {
+  z-index: 3;
+}
+
+.max-slider {
+  z-index: 3;
+}
+
+.price-display {
+  text-align: center;
+  font-size: 14px;
+  color: #0f181f;
+  margin-top: 10px;
+}
+
+/* Ensure the track appears as a single line */
+.slider::-webkit-slider-runnable-track {
+  background: #ddd;
+  height: 5px;
+}
+
+.slider::-moz-range-track {
+  background: #ddd;
+  height: 5px;
+}
+
+
+/* Existing styles remain the same, add the following at the end */
+
+/* Hide ShopLeft on mobile screens between 370px and 760px */
+
+@media(max-width: 479.99px) and (min-width: 310px) {
+  .Shop{
+    width: 505px;
+  }
+  .ShopLeft {
+    display: none;
+  }
+  .ShopNav{
+    padding-top: 10px;
+  }
+
+  .ShopRight {
+    width: 100%;
+  }
+
+  .FilterSortMobile {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .FilterSortButton {
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #0f181f;
+    margin-left: 50%;
+  }
+
+  .DesktopSort {
+    display: none;
+  }
+
+  .ShopRightMiddleLeft {
+    font-size: 16px;
+  }
+}
+
+/* Filter Modal Styling */
+.FilterModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.FilterModalContent {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.FilterModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.FilterModalHeader p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.FilterModalHeader span {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media(max-width: 760.99px) and (min-width: 480px) {
+  
+  
+  .ShopLeft {
+    display: none;
+  }
+
+  .ShopRight {
+    width: 100%;
+  }
+
+  .FilterSortMobile {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .FilterSortButton {
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #0f181f;
+    margin-left: 50%;
+  }
+
+  .DesktopSort {
+    display: none;
+  }
+
+  .ShopRightMiddleLeft {
+    font-size: 16px;
+  }
+}
+
+/* Filter Modal Styling */
+.FilterModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.FilterModalContent {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.FilterModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.FilterModalHeader p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.FilterModalHeader span {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+
+
+
+/* Ensure the modal is hidden on larger screens */
+@media screen and (min-width: 761px) {
+  .FilterSortMobile {
+    display: none;
+  }
+
+  .FilterModal {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .FilterSortMobile {
+    display: none;
+  }
+  
+
+  .FilterModal {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 30px; /* Increase height slightly */
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: transparent; /* Remove default track */
+    outline: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+
+input.slider.min-slider 
+{
+   z-index: 5;
+}
+.min-slider::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.slider-track {
+  position: absolute;
+  height: 4px;
+  background-color: #ccc;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Hide default appearance */
+.slider {
+  /* -webkit-appearance: none; */
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: none;
+  pointer-events: none; /* Let top slider handle all interaction */
+  z-index: 2;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #000;
+  border: 2px solid #fff;
+  cursor: pointer;
+  margin-top: -8px;
+  pointer-events: all;
+  position: relative;
+  z-index: 3;
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  
+  border-radius: 50%;
+  background: #000;
+  border: 2px solid #fff;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/* Set z-index for control priority */
+.thumb-left {
+  z-index: 3;
+}
+.thumb-right {
+  z-index: 4;
+}
+
+.price-display {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}

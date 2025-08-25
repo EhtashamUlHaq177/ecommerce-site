@@ -1,6 +1,8 @@
- body {
+
+
+body {
   margin-top: -20px;
-  background-image: url('src/assets/Images/BackgroundImg/Backgroundimg.avif');
+  background-image: url('/public/Backgroundimg.avif');
   background-size: 100%;
   background-position:  right center;
   background-attachment: fixed; /* Keeps the background in place */

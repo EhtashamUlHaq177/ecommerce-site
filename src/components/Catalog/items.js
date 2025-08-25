@@ -1,154 +1,9 @@
-// const items=[
-//     {
-//         "id": 1,
-//         "color":"Yellow",
-//         "size":7,
-//         "name": "Yellow sandels",
-//         "price": 90.00,
-//         "image": "src/assets/sandels/yellow sandels/sandel1.avif"
-//     },
-//     {
-//         "id": 2,
-//         "color":"Blue",
-//         "size":8,
-//         "name": "Blue Ballet Flats",
-//         "price": 90.00,
-//         "image": "src/assets/sandels/Blue Ballet Flats/Blue Ballet Flats.avif"
-//     },
-//     {
-//         "id": 3,
-//         "color":"Beige",
-//         "size":8,
-//         "name": "Beige Patent Leather Mules",
-//         "price": 150.00,
-//         "image": "src/assets/sandels/Beige Patent Leather Mules/Beige Patent Leather Mules.avif"
-//     },
-//     {
-//         "id": 4,
-//         "color":"Brown",
-//         "size":7,
-//         "name": "Versatile Casual Flats",
-//         "price": 85.00,
-//         "image": "src/assets/sandels/Versatile casual Flats/Versatile casual Flats.jpg"
-//     },
-//     {
-//         "id": 5,
-//         "color":"Grey",
-//         "size":7,
-//         "name": "Leather Sandals",
-//         "price": 175.00,
-//         "image":"src/assets/sandels/Leather Sandels/sandel5.avif"
-//     },
-//     {
-//         "id": 6,
-//         "color":"Black",
-//         "size":9,
-//         "name": "Black Leather Heels",
-//         "price": 120.00,
-//         "image": "src/assets/sandels/Black Leather Heels/Black Leather Heels.avif"
-//     }
-// ];
-// export default items;
-
-
-
-
-// const items = [
-//   {
-//     id: 1,
-//     color: "Yellow",
-//     size: 7,
-//     name: "Yellow Sandals",
-//     price: 90.00,
-//     image: "src/assets/sandels/yellow sandels/sandel1.avif",
-//     category: "Sandals", // Added category
-//     date: "2025-03-15", // Added date for "Newest" sorting
-//     trending: 80 // Added trending score for "Trending" sorting
-//   },
-//   {
-//     id: 2,
-//     color: "Blue",
-//     size: 8,
-//     name: "Blue Ballet Flats",
-//     price: 90.00,
-//     image: "src/assets/sandels/Blue Ballet Flats/Blue Ballet Flats.avif",
-//     category: "Comfort", // Added category
-//     date: "2025-02-10", // Added date for "Newest" sorting
-//     trending: 65 // Added trending score for "Trending" sorting
-//   },
-//   {
-//     id: 3,
-//     color: "Beige",
-//     size: 8,
-//     name: "Beige Patent Leather Mules",
-//     price: 150.00,
-//     image: "src/assets/sandels/Beige Patent Leather Mules/Beige Patent Leather Mules.avif",
-//     category: "Evening", // Added category
-//     date: "2025-01-20", // Added date for "Newest" sorting
-//     trending: 90 // Added trending score for "Trending" sorting
-//   },
-//   {
-//     id: 4,
-//     color: "Brown",
-//     size: 7,
-//     name: "Versatile Casual Flats",
-//     price: 85.00,
-//     image: "src/assets/sandels/Versatile casual Flats/Versatile casual Flats.jpg",
-//     category: "Comfort", // Added category
-//     date: "2024-12-05", // Added date for "Newest" sorting
-//     trending: 50 // Added trending score for "Trending" sorting
-//   },
-//   {
-//     id: 5,
-//     color: "Grey",
-//     size: 7,
-//     name: "Leather Sandals",
-//     price: 175.00,
-//     image: "src/assets/sandels/Leather Sandels/sandel5.avif",
-//     category: "Sandals", // Added category
-//     date: "2025-04-01", // Added date for "Newest" sorting
-//     trending: 75 // Added trending score for "Trending" sorting
-//   },
-//   {
-//     id: 6,
-//     color: "Black",
-//     size: 9,
-//     name: "Black Leather Heels",
-//     price: 120.00,
-//     image: "src/assets/sandels/Black Leather Heels/Black Leather Heels.avif",
-//     category: "Evening", // Added category
-//     date: "2025-03-01", // Added date for "Newest" sorting
-//     trending: 85 // Added trending score for "Trending" sorting
-//   }
- 
-// ];
-
-// export default items;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import yellowSandels from '../../assets/sandels/yellow sandels/sandel1.avif';
+import blueBallet from '../../assets/sandels/Blue Ballet Flats/Blue Ballet Flats.avif'
+import beigePatent from '../../assets/sandels/Beige Patent Leather Mules/Beige Patent Leather Mules.avif'
+import versatileCasual from '../../assets/sandels/Versatile casual Flats/Versatile casual Flats.jpg'
+import leatherSandels from '../../assets/sandels/Leather Sandels/sandel5.avif'
+import blackLeather from '../../assets/sandels/Black Leather Heels/Black Leather Heels.avif'
 
 
 
@@ -169,7 +24,7 @@ const items = [
     size: 7,
     name: "Yellow Sandals",
     price: 90.00,
-    image: "/src/assets/sandels/yellow sandels/sandel1.avif",
+    image: yellowSandels,
     category: "Sandals",
     date: "2025-03-15",
     trending: 80,
@@ -184,7 +39,7 @@ const items = [
     size: 8,
     name: "Blue Ballet Flats",
     price: 90.00,
-    image: "/src/assets/sandels/Blue Ballet Flats/Blue Ballet Flats.avif",
+    image: blueBallet,
     category: "Comfort",
     date: "2025-02-10",
     trending: 65,
@@ -199,7 +54,7 @@ const items = [
     size: 8,
     name: "Beige Patent Leather Mules",
     price: 150.00,
-    image: "/src/assets/sandels/Beige Patent Leather Mules/Beige Patent Leather Mules.avif",
+    image: beigePatent,
     category: "Evening",
     date: "2025-01-20",
     trending: 90,
@@ -214,7 +69,7 @@ const items = [
     size: 7,
     name: "Versatile Casual Flats",
     price: 85.00,
-    image: "/src/assets/sandels/Versatile casual Flats/Versatile casual Flats.jpg",
+    image:versatileCasual,
     category: "Comfort",
     date: "2024-12-05",
     trending: 50,
@@ -229,7 +84,7 @@ const items = [
     size: 7,
     name: "Leather Sandals",
     price: 175.00,
-    image: "/src/assets/sandels/Leather Sandels/sandel5.avif",
+    image: leatherSandels,
     category: "Sandals",
     date: "2025-04-01",
     trending: 75,
@@ -244,7 +99,7 @@ const items = [
     size: 9,
     name: "Black Leather Heels",
     price: 120.00,
-    image: "/src/assets/sandels/Black Leather Heels/Black Leather Heels.avif",
+    image: blackLeather,
     category: "Evening",
     date: "2025-03-01",
     trending: 85,

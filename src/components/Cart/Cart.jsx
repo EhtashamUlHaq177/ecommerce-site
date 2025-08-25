@@ -3,6 +3,7 @@ import './Cart.css';
 import CartItem from './CartItem/CartItem';
 import { useCart } from '/src/components/Cart/CartContext/CartContext.jsx';
 import { useNavigate } from 'react-router-dom';
+import Closeimg from '../../assets/svgs/CrossSvg.svg';
 
 function Cart({ showCart, setShowCart }) {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
@@ -27,7 +28,7 @@ function Cart({ showCart, setShowCart }) {
         <p className="Cartpara">({cartItems.length} items)</p>
         <img
           className="CancelBtn"
-          src="/src/assets/svgs/CrossSvg.svg"
+          src={Closeimg}
           alt="Cancel"
           onClick={() => setShowCart(false)}
         />

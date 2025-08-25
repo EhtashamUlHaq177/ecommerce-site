@@ -3,6 +3,7 @@ import './Nav.css';
 import { Link } from 'react-router-dom';
 import { useCart } from '/src/components/Cart/CartContext/CartContext.jsx';
 import LogoImg from '../../../public/ECommerceLogo.png';
+import hamImg from '../../assets/ham.png';
 
 function Nav({ setShowCart }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,7 +66,7 @@ function Nav({ setShowCart }) {
         </div>
         <div>
           <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-            <img src='/src/assets/ham.png' alt="Menu" />
+            <img src={hamImg} alt="Menu" />
           </button>
         </div>
         {menuOpen && (

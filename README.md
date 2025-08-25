@@ -6,7 +6,7 @@ It features product listings, shopping cart functionality, and a clean responsiv
 ---
 
 ##  Live Demo  
-(https://ehtashamulhaq177.github.io/ecommerce-site/)
+https://ehtashamulhaq177.github.io/ecommerce-site/
 
 ---
 

@@ -1,12 +1,30 @@
-# React + Vite
+# 🛍️ E-commerce Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **E-commerce website frontend** built with **React.js** and **Vite**.  
+It features product listings, shopping cart functionality, and a clean responsive design for an engaging user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo  
+👉 [View on GitHub Pages](https://ehtashamulhaq177.github.io/ecommerce-site/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+- 🏠 **Home Page** with hero section, featured products, and call-to-action  
+- 🛒 **Shop Page** displaying all products in a responsive grid  
+- 📄 **Product Page** with product details  
+- 🛍️ **Cart Page** with add/remove/update functionality  
+- 📞 **Contact Us Page** for user inquiries  
+- 📱 Fully **responsive design** for all screen sizes  
+
+---
+
+## 🛠️ Tech Stack
+- **React.js** – Frontend library  
+- **Vite** – Fast build tool  
+- **CSS (Modules)** – Styling  
+- **GitHub Pages** – Deployment  
+
+---
+

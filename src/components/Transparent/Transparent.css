@@ -1,0 +1,13 @@
+.TransparentDiv{
+    height: 700px;
+    width: 100%;
+    background: transparent;
+   
+}
+
+@media(min-width:310px)and (max-width:500px){
+    .TransparentDiv{
+        height: 500px;
+       
+    }
+}

@@ -1,0 +1,322 @@
+.Cart{
+ 
+    height: 600px;
+    width: 34.5%;
+    background-color:white;
+    position: fixed ;
+    right: 440px; 
+    padding:12px 15px;
+   
+}
+
+
+
+
+.cartHeading{
+    font-size: 24px;
+    color: #0f181f;   
+}
+
+.Cartpara {
+    padding-top: 5px;
+}
+.CancelBtn{
+    padding-top: 12px;
+    cursor: pointer;
+    margin-left: 200px;
+    height: 20px;
+    width: 20px;
+}
+.CartHead{
+    display: flex;
+    font-size:18px;
+    color: #0f181f;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+    gap: 10px;
+    padding:15px 0;
+    border-bottom: 1px solid #0f181f;
+
+}
+
+
+
+
+
+.EmptyCartMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust based on your cart height */
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+/*  hello  */
+
+.CartCheckout{
+    margin: 15px 10px;
+}
+
+.SubTotal{
+    display: flex;
+}
+.CheckoutSecure{
+    display: flex;
+}
+
+.SubTotalHead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #0f181f;
+    width: 80%;
+    font-weight: 500;
+}
+.SubTotalPrice{
+       font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #0f181f;
+    
+}
+.CheckutPara{
+    margin: 15px 0;
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #0f181f;
+}
+.CheckoutBtns{
+    display: flex;
+    flex-direction: column;
+}
+
+.CheckoutBtn{
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #0f181f;
+    color: white;
+    border: none;
+}
+.CheckoutBtn:hover{
+    background-color: gray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.ViewCartBtn{
+    height: 40px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 1px solid black;
+}
+.ViewCartBtn:hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.3s;
+}
+
+.CheckoutSecure{
+    display: flex;
+    margin: 15px;
+    align-items: center;  
+    justify-content: center;  
+}
+.lock{
+    margin-right:5px ;
+    height: 15px;
+    width: 15px;
+}
+.LockPara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #0f181f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+
+@media (min-width:310px) and (max-width: 479.99px){
+.Cart{
+    width: 80%;
+    right: 420px;
+}
+
+}
+
+
+@media  (min-width:480px)and (max-width:570px){
+ .Cart{
+    width: 100%;
+    right: 420px;
+}
+
+  
+
+}
+
+
+
+
+
+@media (min-width: 570.01px) and (max-width: 740px) {
+  
+   .Cart{
+    width: 60%;
+    right: 374px;
+    
+}
+.CancelBtn{
+    margin-left: 150px;
+}
+  
+
+    
+}
+
+  @media (min-width: 740.01px) and (max-width: 780px) {
+
+      .Cart{
+    width: 60%;
+    right: 420px;
+    
+     }
+     .CancelBtn{
+    margin-left: 210px;
+    }
+   
+  }
+  
+ 
+  @media (min-width: 780.01px) and (max-width: 890.98px) {
+
+       .Cart{
+    width: 60%;
+    right: 420px;
+    padding-right: 50px;
+
+     }
+     .CancelBtn{
+    margin-left: 210px;
+    }
+  
+    
+  }
+  
+  
+  @media (min-width: 890.01px) and (max-width: 1100.98px) {
+         .Cart{
+    width: 50%;
+    right: 420px;
+    padding-right: 50px;
+
+     }
+     .CancelBtn{
+    margin-left: 180px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+   @media (min-width: 1101.01px) and (max-width: 1300.98px) {
+         .Cart{
+    width: 40%;
+    right: 420px;
+    padding-right: 50px;
+
+     }
+     .CancelBtn{
+    margin-left: 160px;
+    }
+  }
+
+
+
+   @media (min-width: 1301.01px) and (max-width: 1450.98px) {
+         .Cart{
+    width: 40%;
+    right: 32%;
+    padding-right: 50px;
+
+     }
+     .CancelBtn{
+    margin-left: 160px;
+    }
+  }
+
+  @media (min-width: 1450.01px) and (max-width: 1750.98px) {
+         .Cart{
+    width: 50%;
+    right: 27%;
+    padding-right: 50px;
+
+     }
+     .CancelBtn{
+    margin-left: 160px;
+    }
+  }
+  
+  /* Extra extra large devices (≥1400px) */
+  /* @media (min-width: 1400px) {
+    .brandName {
+      margin-left: 5%;
+    }
+  
+    .navList {
+      margin-left: 480px;
+    }
+  
+    .navLogin {
+      padding-left: 290px;
+      margin-right: -150px
+    }
+  
+    .navCart {
+      margin: 0 25px;
+    }
+  } */
+
+
+  

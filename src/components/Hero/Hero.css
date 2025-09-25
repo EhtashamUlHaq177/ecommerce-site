@@ -1,0 +1,222 @@
+
+.Hero{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+}
+
+.HeroVideo video{
+    display: flex;
+    object-fit: cover;
+     
+}
+.HeroVideo{
+    width: 50%;
+}
+
+.HeroLeft{
+    height: 828px;
+    width: 690px;
+    background-color: #0F181F;
+}
+/* Hero text styling */
+.HeroText{
+    margin-left: 75px;
+    color: white;
+    position: absolute;
+    top: 35%;
+}
+.HerotextHead{
+    font-size: 84px;
+    letter-spacing: -0.06em;
+    margin: 0;
+    line-height: 1.0;
+}
+.HeroTextPara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+.HeroTextButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 203px;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.HeroTextButton:hover{
+    color: white;
+    background-color: #0F181F;
+    border-color: white;
+    
+}
+
+
+
+/* Responsiveness */
+/* @media (min-width:360px) and (max-width: 479.99px) */
+
+
+@media (min-width:310px) and (max-width: 479.99px){
+    .Hero{
+        width: 565px;
+        flex-direction: column;
+        height: 750px;
+        
+       }
+       .HeroVideo{
+           height:375px ;
+       }
+       .HeroVideo video{
+        height: 520px;
+        object-fit: cover;
+       }
+      .HeroLeft{
+        height: 520px;
+       }
+       .HeroText{
+        top: 17.8%;
+        margin-left: 25px;
+    }
+
+    .HerotextHead{
+        font-size: 60px;
+        letter-spacing: -0.06em;
+        margin: 0;
+        line-height: 1.0;
+    }
+    .HeroTextPara{
+       
+        font-size: 10px;
+        
+    }
+    .HeroTextButton{
+        
+        font-size: 10px;
+        width: 120px;
+        height: 35px;
+        
+    }
+
+
+    
+}
+
+
+
+@media (min-width:480px) and (max-width: 600px){
+    .Hero{
+        flex-direction: column;
+        
+       }
+       .HeroVideo video{
+        width: 600px; 
+        height: 520px;
+        object-fit: cover;
+       }
+      .HeroLeft{
+        width: 600px;
+        height: 520px;
+       }
+       .HeroText{
+        top: 20%;
+        margin-left: 25px;
+    }
+
+    .HerotextHead{
+        font-size: 60px;
+        letter-spacing: -0.06em;
+        margin: 0;
+        line-height: 1.0;
+    }
+    .HeroTextPara{
+       
+        font-size: 10px;
+        
+    }
+    .HeroTextButton{
+        
+        font-size: 10px;
+        width: 120px;
+        height: 35px;
+        
+    }
+
+
+    
+}
+
+@media (min-width: 601px) and (max-width: 768px){
+    .Hero{
+        flex-direction: column;
+        /* margin-top: 30px; */
+       }
+       .HeroVideo video{
+        width: 1350px; 
+        height: 600px;
+       }
+      .HeroLeft{
+        width: 1350px;
+        height: 600px;
+       }
+       .HeroText{
+        top: 18%;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    .Hero{
+       
+        flex-direction: column;
+       
+       }
+       .HeroVideo video{
+        width: 1800px; 
+        height: 680px;
+       }
+      .HeroLeft{
+        width: 1800px;
+        height: 720px;
+       }
+       .HeroText{
+        top: 15%;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+   
+   .Hero{
+    flex-direction: column;
+   }
+   .HeroVideo video{
+    width: 1850px; 
+    height: 680px;
+   }
+  .HeroLeft{
+    width: 1850px;
+    height: 680px;
+   }
+   .HeroText{
+    top: 20%;
+}
+
+
+}
+@media (min-width: 1400px){
+
+    .HeroVideo video{ 
+        width: 2250px; 
+    }
+    .HeroLeft{
+        width: 2250px;
+    }
+}

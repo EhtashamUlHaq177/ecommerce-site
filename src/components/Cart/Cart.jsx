@@ -4,6 +4,7 @@ import CartItem from './CartItem/CartItem';
 import { useCart } from '/src/components/Cart/CartContext/CartContext.jsx';
 import { useNavigate } from 'react-router-dom';
 import Closeimg from '../../assets/svgs/CrossSvg.svg';
+import LockSvg from '../../assets/svgs/LockSvg.svg';
 
 function Cart({ showCart, setShowCart }) {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
@@ -74,7 +75,7 @@ function Cart({ showCart, setShowCart }) {
               </button>
             </div>
             <div className="CheckoutSecure">
-              <img className="lock" src="/src/assets/svgs/LockSvg.svg" alt="Lock" />
+              <img className="lock" src={LockSvg} alt="Lock" />
               <p className="LockPara">secure checkout</p>
             </div>
           </div>

@@ -4,6 +4,8 @@ import countries from '../../assets/Countriesdata/countries';
 import { Link } from 'react-router-dom';
 import mainIMage from '../../assets/Images/ContactUsImg/ContactUsImg.avif';
 import worldSvg from '../../assets/svgs/World.svg';
+import upArrow from '../../assets/svgs/1.svg';
+import downArrow from '../../assets/svgs/2.svg';
 
 function Contactus() {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -105,8 +107,10 @@ function Contactus() {
                                 ) : (
                                     <img className='WorldSvg' src={worldSvg} alt="World" width="20" />
                                 )}
-                                <button className="DropDownButton" type='button' onClick={toggleDropdown}>
-                                    <img className='dropdownSvg' src={isDropdownOpen ? "src/assets/svgs/1.svg" : "src/assets/svgs/2.svg"} alt="Dropdown Toggle" width="20" />
+                                {/* <button className="DropDownButton" type='button' onClick={toggleDropdown}> */}
+                                    {/* <img className='dropdownSvg' src={isDropdownOpen ? {downArrow} : {upArrow}} alt="Dropdown Toggle" width="20"/> */}
+                                    <button className="DropDownButton" type='button' >
+                                    <img className='dropdownSvg' onClick={toggleDropdown} src={downArrow} style={{ transform: isDropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)', cursor:'pointer' }} alt="Dropdown Toggle" width="20"/>
                                 </button>
                                 <input className='CountryInput' type='text' value={phoneCode} onChange={handleCodeInput} />
                             </div>

@@ -29,6 +29,7 @@ function CartItem({
         <img
           className="cart-item-delete"
           src={deleteSvg}
+// fixed the source path here
           alt="Delete"
           onClick={onDelete}
           style={{ cursor: 'pointer', width: '20px', height: '20px' }}

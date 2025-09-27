@@ -75,6 +75,7 @@ function Cart({ showCart, setShowCart }) {
               </button>
             </div>
             <div className="CheckoutSecure">
+     {/* ]fixed path here */}
               <img className="lock" src={LockSvg} alt="Lock" />
               <p className="LockPara">secure checkout</p>
             </div>
